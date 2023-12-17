@@ -1,0 +1,93 @@
+:root {
+  --first-palette: #fff;
+  --third-palette: #ccd9ff;
+  --fourth-palette: #6b7db3;
+
+  --border-radius1: 8px;
+  --border-radius2: 20px;
+}
+body {
+  background-color: var(--first-palette);
+  margin: 20px 0;
+}
+
+.layout-container {
+  /* background-color: aqua; */
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.new-line {
+  display: block;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.navbar-content {
+  background-color: var(--third-palette);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: var(--border-radius1);
+}
+
+.menu-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+
+  text-align: center;
+}
+
+.menu-options a {
+  text-decoration: none;
+  color: var(--fourth-palette);
+
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.6em;
+  letter-spacing: 0.125em;
+}
+
+.option {
+  padding: 1em 1.5em;
+}
+
+.button-like {
+  background-color: var(--fourth-palette);
+  border-radius: var(--border-radius2);
+}
+
+.button-like a {
+  color: var(--first-palette);
+  font-weight: 400;
+}
+
+.on-hover a:hover {
+  color: var(--first-palette);
+}
+
+.button-like:hover {
+  background-color: var(--third-palette);
+}
+.button-like:hover > a {
+  color: var(--fourth-palette);
+}
+
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu-options {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
