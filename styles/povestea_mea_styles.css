@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 687px) {
   .povestea-container {
-    padding: 5px;
+    padding: 20px 5px;
   }
   .povestea-pics {
     display: flex;

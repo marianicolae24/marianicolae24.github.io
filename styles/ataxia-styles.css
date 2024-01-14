@@ -9,10 +9,6 @@
   gap: 10px;
 }
 
-.ataxia-text {
-  padding: 1.5rem;
-}
-
 .ataxia-left-container {
   display: flex;
   flex-direction: column;
@@ -60,8 +56,9 @@
 }
 
 .single-image {
-  width: 300px;
-  height: 460px;
+  width: 326px;
+  /* height: 460px; */
+  aspect-ratio: 1/1.5;
   border: var(--intagramLike-border);
 
   overflow: hidden;
@@ -90,5 +87,13 @@
 
   .ataxia-media {
     flex-direction: column-reverse;
+  }
+
+  .ataxia-container {
+    padding: 20px 5px;
+  }
+
+  .more-about-ataxia-card {
+    max-width: 80%;
   }
 }

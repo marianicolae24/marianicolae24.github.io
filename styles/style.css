@@ -127,6 +127,10 @@ span.bolded-term {
   gap: 10px;
 }
 
+.text-block {
+  padding: 1.5rem;
+}
+
 @media (max-width: 768px) {
   .navbar-content {
     flex-direction: column;
